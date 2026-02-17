@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import VillagerCarousel from '../components/VillagerCarousel.astro';
+import FunkoCarousel from '../components/FunkoCarousel.astro';
 ---
 
 <BaseLayout title="LR Clarkin">
@@ -10,6 +12,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       alt="Hello Koholint"
     />
   </header>
+  <VillagerCarousel />
+  <FunkoCarousel />
 </BaseLayout>
 
 <style>
@@ -23,7 +27,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin-bottom: 2rem;
     font-weight: 700;
     letter-spacing: -0.03em;
-    background: linear-gradient(135deg, #ffffff 0%, #b8d4c4 100%);
+    background: linear-gradient(135deg, #1a3d5c 0%, #2e5a8a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -3,6 +3,8 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
+    "fetch-villagers": "node scripts/fetch-villagers.js",
+    "fetch-funko-hp": "node scripts/fetch-funko-hp.js",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
