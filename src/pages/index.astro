@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="LR Clarkin">
+  <header>
+    <h1>Hello Koholint!</h1>
+    <img
+      src="https://media2.giphy.com/media/chzkhflDZHptPR5b4b/giphy.gif?cid=6c09b9521hheu3xrqgcyk5oxyzgotq7nrf6v4qjvm02il775&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
+      alt="Hello Koholint"
+    />
+  </header>
+</BaseLayout>
+
+<style>
+  header {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #ffffff 0%, #b8d4c4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  img {
+    max-width: min(100%, 600px);
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
